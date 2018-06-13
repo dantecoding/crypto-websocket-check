@@ -74,8 +74,8 @@ func NewLogger() *logrus.Logger {
 	}
 
 	pathMap := lfshook.PathMap{
-		logrus.InfoLevel:  "info.log",
-		logrus.ErrorLevel: "error.log",
+		logrus.InfoLevel:  "crypt_info.log",
+		logrus.ErrorLevel: "crypt_error.log",
 	}
 
 	Log = logrus.New()

@@ -2,7 +2,9 @@ version: "3.3"
 
 services:
   server_crypto:
-    image: acmra/crypto-websocket-check
+    build:
+      context: .
+      dockerfile: Dockerfile
     network_mode: "bridge"
     ports:
       - "9999:9999"
